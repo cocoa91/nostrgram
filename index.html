@@ -292,7 +292,7 @@
             console.log(bip32);
 
             const nostrAccountKeys = bip32
-            .deriveHardened(0)
+            .deriveHardened(1)
             .derive(0); 
 
             console.log(nostrAccountKeys);
@@ -308,7 +308,7 @@
             //use bip32 to generate a derived key pair for lnbits
 
             const lnbitsAccountKeys = bip32
-            .deriveHardened(1)
+            .deriveHardened(0)
             .derive(0); 
             
             console.log(lnbitsAccountKeys);
